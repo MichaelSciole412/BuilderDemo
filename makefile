@@ -23,7 +23,7 @@ demo: bin/Demo.class
 	java -cp .:bin Demo
 
 check: styles.xml 
-	java11 $(CKSTYLE_COMMAND) -c ./styles.xml src/**/**/*.java
+	java11 $(CKSTYLE_COMMAND) -c ./styles.xml src/**/*.java
 
 clean:
 	rm -f ./bin/**/*.class
