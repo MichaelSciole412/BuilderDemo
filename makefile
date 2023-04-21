@@ -19,11 +19,11 @@ compile: $(JUNIT5_JAR)
 test: $(JUNIT5_JAR)
 	java -cp bin:$(JUNIT5_JAR) $(JUNIT5_RUNNER) --scan-class-path 
 
-demo: bin/Demo.class
-	java -cp .:bin Demo
+demo: bin/cars/Demo.class
+	java -cp .:bin cars/Demo
 
 check: styles.xml 
 	java11 $(CKSTYLE_COMMAND) -c ./styles.xml src/**/*.java
 
 clean:
-	rm -f ./bin/**/*.class
+	rm -f ./bin/*.class
