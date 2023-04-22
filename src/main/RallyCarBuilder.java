@@ -8,28 +8,28 @@ package cars;
  * @version 1.1
  **/
 
-public class SportsCarBuilder implements CarBuilder
+public class RallyCarBuilder implements CarBuilder
 {
 	private Cars car;
 
-	public SportsCarBuilder()
+	public RallyCarBuilder()
 	{
 		this.car = new Cars();
 	}
 
 	public void buildEngine()
 	{
-		car.setEngine("Turbo Charged V8");
+		car.setEngine("1.6-liter direct-injection turbocharged v6");
 	}
 
 	public void buildBody()
 	{
-		car.setBody("Sedan");
+		car.setBody("Hatchback");
 	}
 
 	public void buildTires()
 	{
-		car.setTires("Racing Tires");
+		car.setTires("Off-Road Tires");
 	}
 	
 	public void buildUpholstery()

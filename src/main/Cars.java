@@ -1,5 +1,13 @@
 package cars;
 
+/**
+ * The Product class.
+ * This class creates the main product
+ * that will be returned at the end of the program
+ * @author Michael Sciole
+ * @version 1.1
+ **/
+
 public class Cars implements CarSpecs
 {
 	
@@ -30,6 +38,6 @@ public class Cars implements CarSpecs
 
 	public void getSpecs()
 	{
-		System.out.println("The car has a " + this.engine + " engine, and a body made of " + this.body);
+		System.out.println("The car has a " + this.engine + " engine, and a " + this.body + " body!");
 	}
 }
